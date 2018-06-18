@@ -1,0 +1,21 @@
+POST /oauth/token?grant_type=password&amp;username=reader&amp;password=reader1234&amp;client_id=spring-security-oauth2-read-write-client HTTP/1.1
+Host: localhost:8030
+Content-Type: application/json
+authorization: Basic c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLXdyaXRlLWNsaWVudDpzcHJpbmctc2VjdXJpdHktb2F1dGgyLXJlYWQtd3JpdGUtY2xpZW50LXBhc3N3b3JkMTIzNA==
+username: admin
+password: admin1234
+client_id: spring-security-oauth2-read-write-client
+Cache-Control: no-cache
+Postman-Token: 9f93795a-73db-d93c-f9ec-c34433c26faf
+
+{
+	"grant_type":"password"
+}
+\
+
+
+
+GET /secured/company?access_token=1c679310-6ef1-4e69-a8f3-d684b2786386&amp;token_type=bearer HTTP/1.1
+Host: localhost:8030
+Cache-Control: no-cache
+Postman-Token: 99fb59ac-591d-5750-4153-8ba6bfc7df88
